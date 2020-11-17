@@ -1,0 +1,27 @@
+{
+    "name": "vbogoev/ebay-crawler",
+    "description": "Get eBay auction items nice and easy.",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Vasil Bogoev",
+            "email": "vbogoevdev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/dom-crawler": "^5.1",
+        "symfony/css-selector": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "EbayCrawler\\": "module/EbayCrawler/src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 0.0.0.0:8081 -t public public/index.php"
+    }
+}
