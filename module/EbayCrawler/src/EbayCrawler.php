@@ -21,7 +21,7 @@ class EbayCrawler implements EbayInterface
     private array $params = [];
 
     public const OBJECT_FILTERS = [
-        'items' => '.s-item__wrapper',
+        'items' => '.srp-results .s-item__wrapper',
         'item' => [
             'link' => '.s-item__link',
             'title' => '.s-item__title',
