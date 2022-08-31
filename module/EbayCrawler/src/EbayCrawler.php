@@ -173,7 +173,7 @@ class EbayCrawler implements EbayInterface
     private function extractItemTitle(Crawler $title): string
     {
         // Remove "New Listing" label inside title tag
-        $title->filter('span')->each(function ($crawler) {
+        $title->filter('span[role="heading"] span')->each(function ($crawler) {
             foreach ($crawler as $node) {
                 $node->parentNode->removeChild($node);
             }
