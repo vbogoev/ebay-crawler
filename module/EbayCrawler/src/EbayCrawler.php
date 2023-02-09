@@ -25,7 +25,7 @@ class EbayCrawler implements EbayInterface
         'item' => [
             'link' => '.s-item__link',
             'title' => '.s-item__title',
-            'image' => '.s-item__image-img',
+            'image' => '.s-item__image-wrapper > img',
             'price' => '.s-item__price',
             'shipping' => '.s-item__shipping',
         ]
